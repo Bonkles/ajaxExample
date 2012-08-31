@@ -3,6 +3,12 @@ news {
 	font-size:18px;
 }
 
+.snippet-text {
+	font-family:Tahoma;	
+	font-size:12px;
+	font-style:italic;
+}
+
 .topdiv {
 	color:#fff;
     font-size: 48px; 
@@ -13,6 +19,7 @@ news {
 	color:#000;
 	background-color:#ADD8E6;
     border-radius:15px;
+    text-indent:15px;
     font-size: 18px; 
     margin: 30px; 
 }
@@ -21,6 +28,7 @@ news {
 .sports-item {
 	color:#000;
 	background-color:#98FB98;
+    text-indent:15px;
     border-radius:15px;
     font-size: 18px;
     margin: 30px; 
