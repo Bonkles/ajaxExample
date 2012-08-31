@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link href="ajaxExampleStyles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="ajaxExampleScript.js"></script>
+    <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+  </head>
+  <body>
+  <div class=topdiv>
+  
+    <a onclick="fetchSomeNewsWithJQuery('http://rss.cnn.com/rss/cnn_world.rss')" href="javascript:void(0);">News</a>
+    <a onclick="fetchSomeNewsWithJQuery('http://rss.cnn.com/rss/si_topstories?format=xml')" href="javascript:void(0);">Sports</a>
+  </div>
+    <div id="news"></div>
+
+    <script type="text/javascript">
+        google.setOnLoadCallback(fetchSomeNewsWithJQuery("http://rss.cnn.com/rss/cnn_world.rss"));
+    </script>
+  </body>
+</html>

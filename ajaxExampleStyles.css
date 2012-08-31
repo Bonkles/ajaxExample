@@ -1,0 +1,27 @@
+news {
+	font-family:arial;	
+	font-size:18px;
+}
+
+.topdiv {
+	color:#fff;
+    font-size: 48px; 
+    margin: 30px; 
+}
+
+.news-item {
+	color:#000;
+	background-color:#ADD8E6;
+    border-radius:15px;
+    font-size: 18px; 
+    margin: 30px; 
+}
+
+
+.sports-item {
+	color:#000;
+	background-color:#98FB98;
+    border-radius:15px;
+    font-size: 18px;
+    margin: 30px; 
+}
