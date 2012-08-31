@@ -53,6 +53,15 @@ function fetchSomeNewsWithJQuery(newsRssURL)
 //author:           a string containing the story's author. 
 //categories:       a list of strings containing possible category names. 
 function writeNewsItem(index, newsItem) {
-               var divElement =  $('<div/>', {html: newsItem.title}).appendTo('#news').addClass('news-item');
+               var titleWithLink = '<a href="javascript:void(0);" onclick="openPopUp(\'' + newsItem.link + '\')">' + newsItem.title + '</a>';
+               var divElement =  $('<div/>', {html: titleWithLink}).appendTo('#news').addClass('news-item');
                divElement.append($('<div/>', {html: newsItem.contentSnippet}).addClass('snippet-text'));
+}
+
+
+//This function opens a pop-up at the specified link. 
+function openPopUp(link) {
+    popUpWindow = window.open(link, 'News Item', 'height=1024,width=768,scrollbars=yes');
+    if (window.focus) { popUpWindow.focus() }
+    return false;
 }
